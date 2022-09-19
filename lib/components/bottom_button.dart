@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import './constants.dart';
+import 'package:bmi_calculator_flutter/constants.dart';
 
 class BottomButton extends StatelessWidget {
-
   BottomButton({required this.onTap, required this.buttonTile});
 
   final Function() onTap;
@@ -12,7 +11,7 @@ class BottomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child:Container(
+      child: Container(
         color: kBottomContainerColour,
         margin: EdgeInsets.only(top: 10.0),
         width: double.infinity,
